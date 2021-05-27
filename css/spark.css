@@ -1,1 +1,0 @@
-.bg{pointer-events:none;position:fixed;z-index:-1;top:0;left:0;right:0;overflow:hidden;bottom:0}.bg div{box-shadow:0 0 10px red;position:absolute;bottom:-50px;left:-50px}#fire div{width:1px;height:1px;border-radius:100%}#line div{width:1px;height:14px}.spark div{width:80px;height:80px;background:url(../img/spark.png?sssss) center/cover;box-shadow:none}
