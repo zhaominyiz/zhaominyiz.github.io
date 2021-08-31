@@ -7,17 +7,17 @@
   <script type="text/javascript" async="" src="./css/td.min.js"></script>
   <script async="" src="./css/uwt.js"></script>
   <script src="./css/369821989886395" async=""></script>
-  <script async="" src="./css/fbevents.js"></script>
+  <!-- <script async="" src="./css/fbevents.js"></script> -->
     <script async="" src="./css/analytics.js"></script>
     
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=1100">
-    <link rel="apple-touch-icon" href="https://www.aimer-web.jp/webclip.png">
+    <link rel="apple-touch-icon" href="">
     <title>Zhaominyiz Personal Website</title>
     <meta name="description" content="">
     <meta name="keywords">
-    <link rel="alternate" media="handheld" href="https://www.aimer-web.jp/">
-    <link rel="canonical" href="https://www.aimer-web.jp/">
+    <link rel="alternate" media="handheld" href="">
+    <link rel="canonical" href="">
     <meta property="og:title" content="Zhaominyi Personal Website">
     <meta property="og:description" content="">
     <meta property="og:url" content="">
@@ -25,9 +25,16 @@
     <meta property="og:type" content="website">
     <script async="" src="./css/gtm.js"></script>
     <!-- <script async="" src="./css/saved_resource(1)"></script> -->
+    <script>
+      if ( location.protocol == 'http:' )
+        location.replace(location.href.replace(/http:/, 'https:'))
+    </script>
+    <script>
+      if ( navigator.userAgent.match(/iPhone|iPod|Android/i) && navigator.userAgent.match(/Mobile/i) )
+        location = './sp/' + location.search
+    </script>
     <link href="./css/1.css" rel="stylesheet">
     <link href="./css/dark.css" rel="stylesheet">
-    <!-- <script src="./css/mdn.js"></script> -->
     <script>
       var root = './'
     </script>
@@ -36,14 +43,14 @@
     <div class="wrap">
       <div id="header">
         <h1>
-          <a href="https://www.aimer-web.jp/"><img src="./css/logo-aimer-white.png" alt="アーティストAimer（エメ）のオフィシャルウェブサイト。ミュージックビデオ、CDリリース、ダウンロード、ライブなどの最新情報を掲載。6th album『Walpurgis』2021.04.14 on sale"></a>
+          <a href=""><img src="./css/logo-white.png" alt="" width="300px"></a>
         </h1>
         <div class="nav notranslate">
-          <ul><li class="news"><a href="https://zhaominyiz.github.io/">HOME</a></li>
+          <ul><li class="home"><a href="https://zhaominyiz.github.io/">HOME</a></li>
             <li class="news"><a href="https://zhaominyiz.github.io/pub.html">PUBLICATIONS</a></li>
             <li class="discography"><a href="https://zhaominyiz.github.io/">AWARDS</a></li>
             <li class="biography"><a href="https://zhaominyiz.github.io/">GALLERY</a></li>
-            <li class="home"><a href="https://zhaominyiz.github.io/about.html">ABOUT ME</a></li>
+            <li class="biography"><a href="https://zhaominyiz.github.io/about.html">ABOUT ME</a></li>
           </ul></div>
       </div>
       <div id="main">
@@ -57,22 +64,15 @@
         <div id="news">
           <div class="topics">
             <h1>
-              <a href="">About Me</a>
+              <a href="">Recent News</a>
             </h1>
-            <br>
-            <h3>
-              我是复旦大学计算机科学技术学院在读的研一硕士研究生。我在南京理工大学获得学士文凭。我的研究兴趣为计算机视觉（尤其是视频处理）和自然语言处理。
-              <br>
-              近期，我以共一身份发表了一篇CVPRW。我和B站一起合作获得了国际竞赛（NTIRE21-视频修复竞赛）的两项冠军和一项亚军。
-              在本科时期，我获得了ACM-ICPC/CCPC竞赛的一块金牌和三块银牌；一次国家奖学金并被中国计算机学会授予了“CCF优秀大学生”奖（全国100人）。
-              如果你对我的研究兴趣好奇，想和我讨论，可以联系我。
-              <br>
-              Email: zhaomy20@fudan.edu.cn
-              <br>
-              QQ or WeChat: 1044774028
-              <br>
-              <a href='https://scholar.google.com.hk/citations?hl=zh-CN&user=AhJEwYAAAAAJ'>谷歌学术</a>
-            </h3>
+            <ul id="information-load">
+              <li><a href="" class="tweet" target="_blank"><i class="fa fa-twitter-square"></i></a><a href="https://arxiv.org/pdf/2108.02110"><span class="date">2021.07.04</span><span class="title">"Recursive Fusion and Deformable Spatiotemporal Attention for Video Compression Artifact Reduction" in MM' 2021</span></a></li>
+              <li><a href="" class="tweet" target="_blank"><i class="fa fa-twitter-square"></i></a><a href="https://openaccess.thecvf.com/content/CVPR2021W/NTIRE/papers/Xu_Boosting_the_Performance_of_Video_Compression_Artifact_Reduction_With_Reference_CVPRW_2021_paper.pdf"><span class="date">2021.03.31</span><span class="title">"Boosting the performance of video compression artifact reduction with reference frame proposals and frequency domain information" in CVPRW' 2021</span></a></li>
+              <!-- <li><a href="" class="tweet" target="_blank"><i class="fa fa-twitter-square"></i></a><a href=""><span class="date">2021.05.27</span><span class="title">Website is Under Construction!</span></a></li> -->
+              <!-- <li><a href="https://twitter.com/share?text=Aimer%E3%80%8C%E5%9C%B0%E7%90%83%E5%84%80%20with%20Vaundy%E3%80%8D%E4%B8%BB%E9%A1%8C%E6%AD%8C%E3%81%AEABEMA%E6%96%B0%E7%95%AA%E7%B5%84%E3%80%8C%E9%9A%A3%E3%81%AE%E6%81%8B%E3%81%AF%E9%9D%92%E3%81%8F%E8%A6%8B%E3%81%88%E3%82%8B%E3%80%8D%E4%BB%8A%E5%A4%9C%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%EF%BC%81%20%7C%20Aimer%20Official%20Web%20Site&amp;url=http://www.aimer-web.jp/news/archive/?528839" class="tweet" target="_blank"><i class="fa fa-twitter-square"></i></a><a href="https://www.aimer-web.jp/news/archive/?528839"><span class="date">2021.05.09</span><span class="title">Aimer「地球儀 with Vaundy」主題歌のABEMA新番組「隣の恋は青く見える」今夜スタート！</span></a></li> -->
+              <!-- <li><a href="https://twitter.com/share?text=%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%96%E3%80%8EAimer%20Live%20at%20Anywhere%202021%20%E2%80%9CWalpurgis%E2%80%9D%E3%80%8F%E3%81%84%E3%82%88%E3%81%84%E3%82%88%E4%BB%8A%E5%A4%9C20%E6%99%82%E9%96%8B%E5%82%AC%EF%BC%81%EF%BC%81%20%7C%20Aimer%20Official%20Web%20Site&amp;url=http://www.aimer-web.jp/news/archive/?528553" class="tweet" target="_blank"><i class="fa fa-twitter-square"></i></a><a href="https://www.aimer-web.jp/news/archive/?528553"><span class="date">2021.05.01</span><span class="title">オンラインライブ『Aimer Live at Anywhere 2021 “Walpurgis”』いよいよ今夜20時開催！！</span></a></li> -->
+              </ul>
           </div>
         </div>
         <!-- <div id="banner">
@@ -94,11 +94,11 @@
           <a class="scroll" href="https://zhaominyiz.github.io/#"><i class="fa fa-chevron-circle-up"></i></a>
         </div> -->
         <div class="nav notranslate"><ul>
-          <li class="biography"><a href="https://zhaominyiz.github.io/">HOME</a></li>
+          <li class="home"><a href="https://zhaominyiz.github.io/">HOME</a></li>
           <li class="news"><a href="https://zhaominyiz.github.io/">PUBLICATIONS</a></li>
           <li class="discography"><a href="https://zhaominyiz.github.io/">AWARDS</a></li>
           <li class="biography"><a href="https://zhaominyiz.github.io/">GALLERY</a></li>
-          <li class="home"><a href="https://zhaominyiz.github.io/about.html">ABOUT ME</a></li>
+          <li class="biography"><a href="https://zhaominyiz.github.io/about.html">ABOUT ME</a></li>
         </ul><ul class="sns"><li><a href="https://zhaominyiz.github.io/"><i class="fa fa-twitter twitter"></i></a></li><li><a href=""><i class="fa fa-youtube-play youtube"></i></a></li><li><a href=""><i class="fa icon-line"></i></a></li></ul></div>
         <p>
           <!-- <small>Stolen From My Favorite Singer, </small>  -->
